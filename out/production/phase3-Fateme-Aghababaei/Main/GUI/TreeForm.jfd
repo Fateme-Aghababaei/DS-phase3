@@ -1,0 +1,46 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq {space :p:74:p, comp label1:::p::p}, seq l {space :p:26:p, comp scrollPane1:::p:239:p}}, space ::33:x}}"
+			"$verticalGroup": "par l {seq t {space ::17:x, comp label1:::p::p, space u:::p, comp scrollPane1:::p::p, space :p:28:p}}"
+		} ) {
+			name: "this"
+			"title": "Tree"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 1, "E:\\Uni\\Data Structures\\Projects\\Phase 3\\phase3-Fateme-Aghababaei\\icon.png" )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTree" ) {
+					name: "jtree"
+					"model": new javax.swing.tree.DefaultTreeModel( new javax.swing.tree.DefaultMutableTreeNode {
+						userObject: "(root)"
+						add( new javax.swing.tree.DefaultMutableTreeNode {
+							userObject: "a"
+							add( new javax.swing.tree.DefaultMutableTreeNode {
+								userObject: "b"
+							} )
+							add( new javax.swing.tree.DefaultMutableTreeNode {
+								userObject: "c"
+							} )
+						} )
+						add( new javax.swing.tree.DefaultMutableTreeNode {
+							userObject: "d"
+						} )
+					} )
+					"showsRootHandles": true
+					"font": new java.awt.Font( "SansSerif", 0, 18 )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Expression Tree"
+				"font": new java.awt.Font( "SansSerif", 0, 20 )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 300, 435 )
+		} )
+	}
+}

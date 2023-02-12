@@ -1,0 +1,195 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space :p:29:p, par t {comp lblResult::::402:x, comp scrollPane1::t::402:x, comp textField::t:::x, comp panel1::t::402:x, comp panel2::l::402:x}, space :p:32:p}}"
+			"$verticalGroup": "par l {seq t {space :p:20:p, comp scrollPane1:::p:130:p, space :::p, comp textField:::p:44:p, space u:::p, comp lblResult:::p:41:p, space u:::p, comp panel2:::p:65:p, space :::p, comp panel1:::p:315:p, space ::21:x}}"
+		} ) {
+			name: "this"
+			"title": "Calculator"
+			"defaultCloseOperation": 3
+			"iconImage": new com.jformdesigner.model.SwingIcon( 1, "E:\\Uni\\Data Structures\\Projects\\Phase 3\\phase3-Fateme-Aghababaei\\icon.png" )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+				"columns": 4
+				"rows": 5
+			} ) {
+				name: "panel1"
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnClear"
+					"text": "AC"
+					"foreground": new java.awt.Color( 0, 0, 0, 255 )
+					"background": new java.awt.Color( 191, 63, 67, 255 )
+					"font": new java.awt.Font( "sansserif", 0, 20 )
+					"border": &LineBorder0 new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnClearActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnOpenParenthesis"
+					"text": "("
+					"background": &Color0 new java.awt.Color( 214, 157, 22, 255 )
+					"font": &Font0 new java.awt.Font( "sansserif", 0, 20 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnOpenParenthesisActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnCloseParenthesis"
+					"text": ")"
+					"background": #Color0
+					"font": new java.awt.Font( "sansserif", 0, 20 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnCloseParenthesisActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnPower"
+					"text": "^"
+					"background": #Color0
+					"font": new java.awt.Font( "sansserif", 0, 20 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnPowerActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btn1"
+					"text": "1"
+					"font": &Font1 new java.awt.Font( "sansserif", 0, 20 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn1ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btn2"
+					"text": "2"
+					"font": #Font1
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn2ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btn3"
+					"text": "3"
+					"font": #Font1
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn3ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnDiv"
+					"text": "/"
+					"background": #Color0
+					"font": new java.awt.Font( "sansserif", 0, 20 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnDivActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btn4"
+					"text": "4"
+					"font": #Font1
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn4ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btn5"
+					"text": "5"
+					"font": #Font1
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn5ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btn6"
+					"text": "6"
+					"font": #Font1
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn6ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnMul"
+					"text": "x"
+					"background": #Color0
+					"font": new java.awt.Font( "sansserif", 0, 20 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnMulActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btn7"
+					"text": "7"
+					"font": #Font1
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn7ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btn8"
+					"text": "8"
+					"font": #Font1
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn8ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btn9"
+					"text": "9"
+					"font": #Font1
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn9ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnSub"
+					"text": "_"
+					"background": #Color0
+					"font": new java.awt.Font( "sansserif", 0, 20 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnSubActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btn0"
+					"text": "0"
+					"font": #Font1
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn0ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnDot"
+					"text": "."
+					"font": #Font1
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnDotActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnEqual"
+					"text": "="
+					"background": new java.awt.Color( 107, 252, 106, 255 )
+					"font": #Font1
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnEqualActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnSum"
+					"text": "+"
+					"background": #Color0
+					"font": new java.awt.Font( "sansserif", 0, 20 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnSumActionPerformed", true ) )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblResult"
+				"text": "  Result"
+				"font": new java.awt.Font( "sansserif", 0, 20 )
+				"border": #LineBorder0
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField"
+				"font": new java.awt.Font( "sansserif", 0, 20 )
+				addEvent( new FormEvent( "java.awt.event.KeyListener", "keyReleased", "textFieldKeyReleased", true ) )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "txtSteps"
+					"enabled": false
+					"font": new java.awt.Font( "sansserif", 0, 20 )
+					"text": "  Steps"
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+				"columns": 2
+			} ) {
+				name: "panel2"
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnTree"
+					"text": "Tree"
+					"font": #Font0
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "E:\\Uni\\Data Structures\\Projects\\Phase 3\\phase3-Fateme-Aghababaei\\treeIcon.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnTreeActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnHistory"
+					"text": "History"
+					"font": #Font1
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "E:\\Uni\\Data Structures\\Projects\\Phase 3\\phase3-Fateme-Aghababaei\\historyIcon.jpg" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnHistoryActionPerformed", true ) )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 465, 700 )
+		} )
+	}
+}
